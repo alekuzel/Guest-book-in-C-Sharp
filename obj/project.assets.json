@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\46764\\Moment3CSharp\\GuestBook\\GuestBook.csproj",
-      "projectName": "GuestBook",
-      "projectPath": "C:\\Users\\46764\\Moment3CSharp\\GuestBook\\GuestBook.csproj",
+      "projectUniqueName": "C:\\Users\\46764\\Moment3CSharp\\Moment3CSharp.csproj",
+      "projectName": "Moment3CSharp",
+      "projectPath": "C:\\Users\\46764\\Moment3CSharp\\Moment3CSharp.csproj",
       "packagesPath": "C:\\Users\\46764\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\46764\\Moment3CSharp\\GuestBook\\obj\\",
+      "outputPath": "C:\\Users\\46764\\Moment3CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\46764\\AppData\\Roaming\\NuGet\\NuGet.Config"
