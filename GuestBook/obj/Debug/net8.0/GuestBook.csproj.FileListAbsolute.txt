@@ -1,0 +1,12 @@
+C:\Users\46764\Moment3CSharp\GuestBook\bin\Debug\net8.0\GuestBook.deps.json
+C:\Users\46764\Moment3CSharp\GuestBook\bin\Debug\net8.0\GuestBook.dll
+C:\Users\46764\Moment3CSharp\GuestBook\bin\Debug\net8.0\GuestBook.pdb
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\GuestBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\GuestBook.AssemblyInfoInputs.cache
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\GuestBook.AssemblyInfo.cs
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\GuestBook.csproj.CoreCompileInputs.cache
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\GuestBook.sourcelink.json
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\GuestBook.dll
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\refint\GuestBook.dll
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\GuestBook.pdb
+C:\Users\46764\Moment3CSharp\GuestBook\obj\Debug\net8.0\ref\GuestBook.dll
