@@ -7,6 +7,7 @@ using System.IO;
 using System.Text.Json;
 
 namespace Moment3CSharp
+//change POST to something longer?
 {
   //create the GuestBook class
     public class GuestBook
@@ -48,45 +49,69 @@ namespace Moment3CSharp
             WriteLine("Inlägg: ");     //ask user to write name
             string postText = ReadLine();    //save input as variable postText
 
-            //Make sure author and post fields are not empty
+            //if field author is empty, show the following message
              if (string.IsNullOrWhiteSpace(author)) {
                 WriteLine("Omöjligt att spara inlägg utan författarents namn!");
                 WriteLine("Författares namn: ");
                 author = ReadLine();}
-
+            
+            //if field post is empty, show the following message
             if (string.IsNullOrWhiteSpace(postText)){
-                Write("Write your post: ");
                 WriteLine("Omöjligt att spara tom inlägg!");
                 WriteLine("Inlägg: ");
                 postText = ReadLine();}
      
-
+            //save post if both author's name and the text were detected
             posts.Add(new Post { Author = author, PostText = postText });
             SavePostToJson();
             WriteLine("Inlägg sparades!");
             
         }
 
-        // Delete a post with specified id
+        
+        // show all the posts
+        public void DisplayAllPosts()
+        {
+            Clear();
+            WriteLine("Inlägg i gästboken:\n");
+            
+
+            // go through exsting posts and display each of them
+            for (int i = 0; i < posts.Count; i++)
+            {
+                WriteLine($"{posts[i]}\n-----------------------");
+                             
+            }
+            //show menu after all the posts
+            ShowMenu();
+        }
+
+
+        // Delete a post by id
         public void DeletePost()
         {
             Clear();
+            //show all the posts so that user may choose which one to delete
             WriteLine("Alla inlägg:");
 
-            // Display entries with index
+            // go through existing posts and display post and its id each on new line
             for (int i = 0; i < posts.Count; i++)
             {
                 WriteLine($"{i + 1}. {posts[i]}");
             }
 
             WriteLine("Skriv nummer av inlägg du vill radera (tänk att det går inte att ångra ditt val): ");
+            //parse the user input, extract integer
             if (int.TryParse(ReadLine(), out int index) && index > 0 && index <= posts.Count)
             {
+                //delete the post with chosen id. method RemoveAt is used to do that
                 posts.RemoveAt(index - 1);
+                //save the changes JSON file again, show confirmational message and the menu
                 SavePostToJson();
                 WriteLine("Inlägg raderad!");
                 ShowMenu();
             }
+            //if user gave unexistant post id, show the message
             else
             {
                 WriteLine($"Inlägg med nummer {index} finns inte.");
@@ -97,52 +122,42 @@ namespace Moment3CSharp
         public void DeleteEverything()
         {
             Clear();
-            Write("Vill du verkligen radera alla inlägg? \n Ja - tryck Y \n Nej - tryck N ");
+            //ask user for confirmation
+            Write("Vill du verkligen radera alla inlägg? \n Ja - tryck Y \n Nej - tryck på valfri knapp");
             string answer = ReadLine();
-
-            if (answer == "Y")
+             
+            //of user really wants to delete everthing, do it and show the confirmatoin
+            if (answer == "Y" || answer == "y")
             {
                 posts.Clear();
                 SavePostToJson();
                 WriteLine("Alla inlägg var raderade.");
                 ShowMenu();
             }
+            //if user chose not to delete everything, show the main menu
             else
             {
                 ShowMenu();
             }
         }
 
-        // show all the posts
-        public void DisplayAllPosts()
-        {
-            Clear();
-            WriteLine("Inlägg i gästboken:");
-
-            // Display entries with index
-            for (int i = 0; i < posts.Count; i++)
-            {
-                WriteLine($"{i + 1}. {posts[i]}");
-                WriteLine("-----------------------");                
-            }
-            ShowMenu();
-        }
-
         // Save new posts to JSON file. Serialize
         public void SavePostToJson()
         {
+            //convert posts to JSON
             string json = JsonSerializer.Serialize(posts);
+            //write posts to file
             File.WriteAllText(jsonFile, json);
         }
 
         // Get post from JSON file. Deserialize
         private void GetPostsFromJson()
         {
-            if (File.Exists(jsonFile))
-            {
+                //read JSON
                 string json = File.ReadAllText(jsonFile);
+                //convert JSON contents to objects of class Post
                 posts = JsonSerializer.Deserialize<List<Post>>(json);
-            }
+            
         }
        
        
