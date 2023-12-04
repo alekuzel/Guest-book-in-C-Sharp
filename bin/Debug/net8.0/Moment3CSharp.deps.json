@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Moment3CSharp/1.0.0": {
+        "runtime": {
+          "Moment3CSharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Moment3CSharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

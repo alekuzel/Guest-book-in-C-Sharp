@@ -1,0 +1,15 @@
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\Moment3CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\Moment3CSharp.AssemblyInfoInputs.cache
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\Moment3CSharp.AssemblyInfo.cs
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\Moment3CSharp.csproj.CoreCompileInputs.cache
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\Moment3CSharp.sourcelink.json
+C:\Users\46764\Moment3CSharp\bin\Debug\net8.0\Moment3CSharp.deps.json
+C:\Users\46764\Moment3CSharp\bin\Debug\net8.0\Moment3CSharp.dll
+C:\Users\46764\Moment3CSharp\bin\Debug\net8.0\Moment3CSharp.pdb
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\Moment3CSharp.dll
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\refint\Moment3CSharp.dll
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\Moment3CSharp.pdb
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\ref\Moment3CSharp.dll
+C:\Users\46764\Moment3CSharp\bin\Debug\net8.0\Moment3CSharp.exe
+C:\Users\46764\Moment3CSharp\bin\Debug\net8.0\Moment3CSharp.runtimeconfig.json
+C:\Users\46764\Moment3CSharp\obj\Debug\net8.0\Moment3CSharp.genruntimeconfig.cache
