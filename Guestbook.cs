@@ -28,14 +28,14 @@ namespace Moment3CSharp
          
          //show the menu
          public void ShowMenu(){
-               WriteLine("Hej och välkommen till gästbok! Vad vill du göra:");
-                WriteLine("-------------------------------------------------");
-                WriteLine("1 - Skapa ny inlägg");
-                WriteLine("2 - Visa alla inlägg");
-                WriteLine("3 - Radera en inlägg");
-                WriteLine("4 - Radera alla inlägg");
-                WriteLine("X - Avsluta");
-                WriteLine("-------------------------------------------------");
+            WriteLine("Hej och välkommen till gästbok! Vad vill du göra:");
+            WriteLine("-------------------------------------------------");
+            WriteLine("1 - Skapa ny inlägg");
+            WriteLine("2 - Visa alla inlägg");
+            WriteLine("3 - Radera en inlägg");
+            WriteLine("4 - Radera alla inlägg");
+            WriteLine("X - Avsluta");
+            WriteLine("-------------------------------------------------");
         }
 
         // create new post in the guest book
@@ -43,7 +43,6 @@ namespace Moment3CSharp
         {
            
             WriteLine("Författares namn: ");    //ask user to write name
-           
             string author = ReadLine();      //save input as the variable author
            
             WriteLine("Inlägg: ");     //ask user to write name
@@ -51,7 +50,7 @@ namespace Moment3CSharp
 
             //if field author is empty, show the following message
              if (string.IsNullOrWhiteSpace(author)) {
-                WriteLine("Omöjligt att spara inlägg utan författarents namn!");
+                WriteLine("Omöjligt att spara inlägg utan författarens namn!");
                 WriteLine("Författares namn: ");
                 author = ReadLine();}
             
@@ -68,7 +67,6 @@ namespace Moment3CSharp
             
         }
 
-        
         // show all the posts
         public void DisplayAllPosts()
         {
